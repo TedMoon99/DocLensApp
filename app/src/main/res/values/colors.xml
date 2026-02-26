@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#1F3864</color>
+    <color name="secondary">#2E75B6</color>
+    <color name="success">#43A047</color>
+    <color name="danger">#E53935</color>
+    <color name="accent">#FFD600</color>
+    <color name="surface">#F5F7FA</color>
+    <color name="stroke">#E5E8EE</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="gray01">#999999</color>
+    <color name="transparent">#00000000</color>
 </resources>
