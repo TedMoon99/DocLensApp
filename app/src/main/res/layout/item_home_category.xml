@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="category"
+            type="com.tedmoon.domain.model.category.Category" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@{category.isClicked ? @color/primary : @color/transparent}"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="@{category.isClicked ? @color/primary : @color/stroke}"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/text_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{category.title}"
+                android:textColor="@{category.isClicked? @color/white : @color/gray}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
